@@ -28,7 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "vl53l1_api.h"
 #include "vl53l1_platform.h"
-
+#include "serialplot.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -191,11 +191,13 @@ int main(void)
 			{
 				status = VL53L1_GetRangingMeasurementData(Dev, &RangingData);
 				if(status==0){
+					SerialPlotFramePlotWord(RangingData.RangeMilliMeter,RangingData.RangeMilliMeter);
 					distance = distance * 0.8f + RangingData.RangeMilliMeter * 0.2f;
 					if(print_count++ >= 10)
 					{
 						print_count = 0;
-						printf("distance is: %d mm\r\n",distance);
+//						printf("distance is: %d mm\r\n",distance);
+//						SerialPlotFramePlotWord(distance,distance);
 					}
 
 //					printf("%d\r\n", RangingData.RangeMilliMeter);

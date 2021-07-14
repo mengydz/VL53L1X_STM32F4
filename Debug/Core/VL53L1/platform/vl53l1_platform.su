@@ -1,0 +1,15 @@
+vl53l1_platform.c:117:10:SysTick_GetMicros	8	static
+vl53l1_platform.c:123:14:VL53L1_WriteMulti	56	static
+vl53l1_platform.c:132:14:VL53L1_ReadMulti	56	static
+vl53l1_platform.c:140:14:VL53L1_WrByte	40	static
+vl53l1_platform.c:148:14:VL53L1_WrWord	24	static
+vl53l1_platform.c:162:14:VL53L1_WrDWord	32	static
+vl53l1_platform.c:177:14:VL53L1_UpdateByte	24	static
+vl53l1_platform.c:192:14:VL53L1_RdByte	48	static
+vl53l1_platform.c:200:14:VL53L1_RdWord	32	static
+vl53l1_platform.c:211:14:VL53L1_RdDWord	32	static
+vl53l1_platform.c:222:14:VL53L1_GetTickCount	16	static
+vl53l1_platform.c:237:14:VL53L1_GetTimerFrequency	24	static
+vl53l1_platform.c:244:14:VL53L1_WaitMs	24	static
+vl53l1_platform.c:250:14:VL53L1_WaitUs	24	static
+vl53l1_platform.c:267:14:VL53L1_WaitValueMaskEx	40	static
